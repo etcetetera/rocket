@@ -3,8 +3,8 @@
 
 Getting Started:
 ```
-git clone https://github.com/EventGames-io/Event_Games_Brand_Run.git
-cd Event_Games_Brand_Run/
+git clone https://github.com/etcetetera/rocket.git
+cd rocket/
 bun install
 bun dev
 ```
