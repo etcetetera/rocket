@@ -1,6 +1,9 @@
-import { Environment } from "@react-three/drei";
+import { Environment, useHelper } from "@react-three/drei";
+import { useRef } from "react";
 
 const Background = () => {
+  const directionalLightRef = useRef()
+  // useHelper(directionalLightRef, DirectionalLightHelper)
   return (
     <>
       <Environment background files="/hdr/earth.hdr" />
@@ -8,9 +11,11 @@ const Background = () => {
       <ambientLight 
         intensity={1}
       />
+      
       <directionalLight
-        intensity={1}
-        position={[5, 10, 7.5]}
+        ref={directionalLightRef}
+        intensity={5}
+        position={[2, 7, 2]}
       />
     </>
   );
